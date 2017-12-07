@@ -136,6 +136,18 @@ def problem3a(window, point, n):
         :type point:  rg.Point
         :type n:      int
     """
+    thickness = 1
+    x = point.x
+    y = point.y
+    x2 = x + 20
+    y2 = y + 10
+    for k in range(n):
+        rg.Point2 = (x2,y2)
+        line.attach_to(window)
+        x = x + 20
+        y = y + 10
+        if thickness + 2 <= 13:
+            thickness = thickness + 2
     # ------------------------------------------------------------------
     # TODO: 3. Implement and test this function.
     #   Note that you should write its TEST function first (above).
