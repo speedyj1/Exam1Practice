@@ -175,7 +175,7 @@ def problem1a(m, n):
 def run_test_problem1b():
     """ Tests the   problem1b   function. """
     # ------------------------------------------------------------------
-    # TODO: 4. Implement this TEST function.
+    # DONE: 4. Implement this TEST function.
     #   It TESTS the  problem1b  function defined below.
     #   Include at least **   4   ** tests.
     # ------------------------------------------------------------------
@@ -190,31 +190,31 @@ def run_test_problem1b():
     print('--------------------------------------------------')
 
     # Test 1:
-    expected = -1.601
+    expected = 5
     answer = problem1b(3, 5)
     print()
-    print('Test 1 expected:', expected, '(approximately)')
+    print('Test 1 expected:', expected)
     print('       actual:  ', answer)
 
     # Test 2:
-    expected = 1.278
-    answer = problem1b(5, 2)
+    expected = 1
+    answer = problem1b(2, 1)
     print()
-    print('Test 2 expected:', expected, '(approximately)')
+    print('Test 2 expected:', expected)
     print('       actual:  ', answer)
 
     # Test 3:
-    expected = -1.601
-    answer = problem1b(3, 4)
+    expected = 44
+    answer = problem1b(5, 40)
     print()
-    print('Test 3 expected:', expected, '(approximately)')
+    print('Test 3 expected:', expected)
     print('       actual:  ', answer)
 
     # Test 4:
-    expected = 1.278
+    expected = 7
     answer = problem1b(4, 7)
     print()
-    print('Test 4 expected:', expected, '(approximately)')
+    print('Test 4 expected:', expected)
     print('       actual:  ', answer)
 
 def problem1b(m, f):
@@ -234,12 +234,12 @@ def problem1b(m, f):
            since there are 44 primes between 5 and 200.
      """
     count = 0
-    for k in range((f*m)+1):
-        if is_prime(k) == True:
+    for k in range((f*m)-m+1):
+        if is_prime(m + k) == True:
             count = count + 1
     return count
     # ------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #
     ####################################################################
@@ -338,10 +338,10 @@ def problem1c(n):
     total = 1
     for k in range(n):
         if is_prime(k+1) == True:
-            total = total * k
-        return sum_of_digits(total)
+            total = total * (k+1)
+    return sum_of_digits(total)
     # ------------------------------------------------------------------
-    # TODO: 6. Implement and test this function.
+    # DONE: 6. Implement and test this function.
     #          Tests have been written for you (above).
     #
     ####################################################################
