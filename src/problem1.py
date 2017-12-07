@@ -190,17 +190,31 @@ def run_test_problem1b():
     print('--------------------------------------------------')
 
     # Test 1:
-    expected = -1.601  # This is APPROXIMATELY the correct answer.
-    answer = problem1a(3, 5)
+    expected = -1.601
+    answer = problem1b(3, 5)
     print()
     print('Test 1 expected:', expected, '(approximately)')
     print('       actual:  ', answer)
 
     # Test 2:
-    expected = 1.278  # This is APPROXIMATELY the correct answer.
-    answer = problem1a(30, 100)
+    expected = 1.278
+    answer = problem1b(5, 2)
     print()
     print('Test 2 expected:', expected, '(approximately)')
+    print('       actual:  ', answer)
+
+    # Test 3:
+    expected = -1.601
+    answer = problem1b(3, 4)
+    print()
+    print('Test 3 expected:', expected, '(approximately)')
+    print('       actual:  ', answer)
+
+    # Test 4:
+    expected = 1.278
+    answer = problem1b(4, 7)
+    print()
+    print('Test 4 expected:', expected, '(approximately)')
     print('       actual:  ', answer)
 
 def problem1b(m, f):
