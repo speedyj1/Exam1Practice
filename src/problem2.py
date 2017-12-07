@@ -101,7 +101,17 @@ def problem2a(circle, rectangle, window):
       :type rectangle: rg.Rectangle
       :type window:    rg.RoseWindow
     """
+    x = rectangle._upper_right_corner
+    x2 = rectangle._lower_left_corner
     circle.attach_to(window)
+    rectangle.attach_to(window)
+    window.render(0.05)
+    window.continue_on_mouse_click()
+    line = rg.Line(x, x2)
+    line.attach_to(window)
+    window.continue_on_mouse_click()
+    circle.fill_color = rectangle.outline_color
+    window.render(0.05)
 
     # ------------------------------------------------------------------
     # TODO: 2. Implement and test this function.
@@ -174,6 +184,14 @@ def problem2b(rect, n, delta, win):
       :type delta:  int
       :type win:    rg.RoseWindow
     """
+    rectangle = rg.Rectangle(rg.Point(100, 100), rg.Point(140, 120))
+    x = rectangle._upper_left_corner
+    x2 = rectangle._lower_right_corner
+    rect.attach_to(win)
+    for k in range(n):
+        rect.attach_to(win)
+        win.render(0.05)  # Pauses for 0.05 seconds after rendering.
+
     # ------------------------------------------------------------------
     # TODO: 3. Implement and test this function.
     #          Tests have been written for you (above).
