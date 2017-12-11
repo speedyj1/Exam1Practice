@@ -114,7 +114,7 @@ def problem2a(circle, rectangle, window):
     window.render(0.05)
 
     # ------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # ------------------------------------------------------------------
     # ------------------------------------------------------------------
@@ -193,7 +193,7 @@ def problem2b(rect, n, delta, win):
         win.render(0.05)  # Pauses for 0.05 seconds after rendering.
 
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # ------------------------------------------------------------------
     # ------------------------------------------------------------------

@@ -143,7 +143,7 @@ def problem3a(window, point, n):
     y2 = y + 10
     for k in range(n):
         rg.Point2 = (x2,y2)
-        line.attach_to(window)
+        rg.Line.attach_to(window)
         x = x + 20
         y = y + 10
         if thickness + 2 <= 13:
